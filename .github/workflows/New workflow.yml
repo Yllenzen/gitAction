@@ -1,0 +1,11 @@
+name: Workflow run, shel, working directory et defaults
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          pwd
+          echo $SHELL
+    
