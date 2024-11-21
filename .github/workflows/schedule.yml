@@ -1,0 +1,9 @@
+name: workflow Schedule
+on: 
+  schedule:
+    - cron: '*/5 * * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo sauvegarde base de données
