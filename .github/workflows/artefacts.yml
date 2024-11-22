@@ -15,11 +15,11 @@ jobs:
     needs: testartifact
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/upload-artifact@v4
+      - uses: actions/download-artifact@v4
         with:
           name: myfirstartifact
           path: ./ici
       - run: |
           ls
-          ls ./gitAction
-          cat ./gitAction/text.txt
+          ls ./ici
+          cat ./ici/text.txt
