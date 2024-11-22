@@ -25,9 +25,11 @@ dist-ssr
 *.sw?
 
 # Workflow
-main.yml
-schedule.yml
-Workflow.yml
+cache.yml
 issue.yml
 main-new.yml
+main.yml
+matrice.yml
 pull-request.yml
+schedule.yml
+Workflow.yml
