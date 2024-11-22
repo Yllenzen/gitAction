@@ -14,4 +14,4 @@ jobs:
           git config --global user.name "FROM CI"
           git add test.txt
           git commit -m "test"
-          git push origin main
+          git push
