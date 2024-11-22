@@ -23,7 +23,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: build
-          path: ./vite-project/dis
+          path: ./vite-project/dist
 
   deploy:
     needs: build
