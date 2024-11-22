@@ -1,0 +1,12 @@
+name: Workflow matrice
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        vers: [12, 13, 14]
+    steps:
+      - run: echo ${{ matrix.os }} ${{ matrix.vers }}
