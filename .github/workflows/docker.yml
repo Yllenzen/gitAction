@@ -6,7 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: node:16
-
     steps:
       - uses: actions/checkout@v4
       - run: ls -la
