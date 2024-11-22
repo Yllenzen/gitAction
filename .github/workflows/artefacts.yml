@@ -6,7 +6,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo 123 > text.txt
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: myfirstartifact
           path: ./text.txt
+
+  downloadartifact:
+    needs: testartifact
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/upload-artifact@v4
+        with:
+          name: myfirstartifact
+          path: ./ici
+      - run: |
+          ls
+          ls ./ici
+          cat ./ici/text.txt
