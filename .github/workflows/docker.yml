@@ -1,0 +1,12 @@
+name: Workflow Docker
+on: push
+
+jobs:
+  testdocker:
+    runs-on: ubuntu-latest
+    container:
+      image: node:16
+
+    steps:
+      - run: ls -la
+      - run: npm -v
