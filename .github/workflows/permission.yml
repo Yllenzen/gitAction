@@ -1,0 +1,15 @@
+name: Workflow permissions
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          echo Hello World !!
+          git config --global user.email "ci@dyma.fr"
+          git config --global user.name "FROM CI"
+          git add test.txt
+          git commit -m "test"
+          git push origin main
