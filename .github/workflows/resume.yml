@@ -1,7 +1,5 @@
 name: Workflow Resume
-on:
-  push:
-    branches: origin/main
+on: push
 
 jobs:
   build:
