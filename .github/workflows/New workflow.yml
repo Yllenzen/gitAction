@@ -10,17 +10,10 @@ jobs:
       - name: fetch repository
         uses: actions/checkout@v4
       - name: configure cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           key: ${{ runner.os }}-${{ hashFiles('./vite-project/package-lock.json') }}
           path: ./vite-project/.npm
       - name: install dependencies
-        run: npm ci --cache .npm
+        run: npm ci --cache .npm --prefer-offline
         working-directory: ./vite-project
-
-      # - run: |
-      #     pwd
-      #   shell: sh
-      # - run: |
-      #     pwd
-      #   shell: pwsh

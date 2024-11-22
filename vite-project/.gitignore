@@ -22,3 +22,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Workflow
+main.yml
+schedule.yml
+Workflow.yml
+issue.yml
+main-new.yml
+pull-request.yml
