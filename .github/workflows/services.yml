@@ -1,0 +1,14 @@
+name: Workflow Services
+on: push
+
+jobs:
+  testdocker:
+    runs-on: ubuntu-latest
+    services:
+      redis:
+        image: redis
+    container:
+      image: node:18
+    steps:
+      - run: apt update && apt install redis-tools -y
+      - run: redis-cli -h redis ping
