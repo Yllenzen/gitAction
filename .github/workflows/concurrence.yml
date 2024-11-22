@@ -1,0 +1,11 @@
+name: Workflow concurrence
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo Very long step
+          sleep 100
+          echo Done !
