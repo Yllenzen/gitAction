@@ -1,4 +1,4 @@
-name: Workflow Services
+name: Workflow Artefact
 on: push
 
 jobs:
