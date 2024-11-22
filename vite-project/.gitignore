@@ -25,11 +25,11 @@ dist-ssr
 *.sw?
 
 # Workflow
-cache.yml
-issue.yml
-main-new.yml
-main.yml
-matrice.yml
-pull-request.yml
-schedule.yml
-Workflow.yml
+.github/workflows/cache.yml
+.github/workflows/issue.yml
+.github/workflows/main-new.yml
+.github/workflows/main.yml
+.github/workflows/matrice.yml
+.github/workflows/pull-request.yml
+.github/workflows/schedule.yml
+.github/workflows/Workflow.yml
