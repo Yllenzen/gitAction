@@ -1,0 +1,10 @@
+name: Workflow Sécurité
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          titre=${{ github.event.head_commit.message }}
+          echo Hello World !!
